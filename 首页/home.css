@@ -3,184 +3,220 @@
   padding: 0;
   list-style: none;
 }
-button{
-  height:36px;
-  width: 120px;
-  border-radius: 36px ;
-  border: 2px solid white;
-  color:black;
-  background-color: gold;
-  position:absolute;
-  left:24px;
-  bottom: 24px;
-  outline: none;
-  font-weight:bold;
-}
-.rightArrow{
-  height:5px;
-  width:5px;
+.rightArrow {
+  height: 5px;
+  width: 5px;
   border-left: gold;
   border-bottom: gold;
 }
-.active{
-
+.active {
 }
-.clearfix::after{
-  content:'';
-  clear:both;
-  display:block;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
 }
-body{
-  width:100%;
+body {
+  width: 100%;
 }
-.page{
-  position:relative;
+.page {
+  position: relative;
 }
-a{
-    text-decoration:none;
-    color:black;
+a {
+  text-decoration: none;
+  color: black;
 }
-.time{
-  width:100%;
-    height:20px;
-    background-color: aqua;
+.time {
+  width: 100%;
+  height: 20px;
+  background-color: aqua;
 }
 .subjectList {
-   margin:8px auto; 
+  margin: 8px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height:68px;
+  height: 68px;
 }
 .subjectList li {
-  width:68px;
+  width: 68px;
   height: 44px;
   float: left;
   line-height: 44px;
   text-align: center;
-  margin:2px;
+  margin: 2px;
 }
-.subjectImg{
-    height:160px;
-    background-color: blue;
-    position: relative;
+.subjectImg {
+  height: 160px;
+  background-color: blue;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
 }
- .change{
-    border-radius: 6pt 0 0 6pt;
-    background-color:white;
-    height:32pt;
-    width:32pt;
-    position: absolute;
-    top:16pt;
-    right:0;
-    z-index:999;
-} 
-.function{
-  height:124px;
-  width:100%;
-  display:flex;
+.subjectStart {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+.subjectStart h4 {
+  color: white;
+  font-weight: bolder;
+}
+.subjectStart h6 {
+  color: white;
+  font-weight: inherit;
+}
+.subjectTriangle {
+  width: 50%;
+  background-image: url("./img/triangle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subjectImg button {
+  height: 36px;
+  width: 120px;
+  border-radius: 36px;
+  border: 2px solid white;
+  color: black;
+  background-color: gold;
+  outline: none;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+/* .buttonCircle{
+  height:20px;
+  width:20px;
+  border-radius: 50%;
+  background-color: black;
+}
+.buttonArrow{
+  height:5px;
+  width: 5px;
+  border-right: 2px solid gold;
+  border-top: 2px solid gold;
+  transform: rotate(45deg);
+} */
+.subjectChange {
+  border-radius: 6pt 0 0 6pt;
+  background-color: white;
+  height: 32pt;
+  width: 32pt;
+  border: 1px solid black;
+  position: absolute;
+  top: 16pt;
+  right: 0;
+  z-index: 999;
+}
+.function {
+  height: 124px;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-around;
- /* position:absolute;
+  /* position:absolute;
   top:252px;  */
 }
-.functionList{
-  margin:8px auto; 
+.functionList {
+  margin: 8px auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 .functionList li {
-  width:76px;
+  width: 76px;
   height: 62px;
   float: left;
-  margin:2px;
+  margin: 2px;
   flex-direction: row;
   justify-content: center;
   text-align: center;
 }
-.banner{
-  height:110px;
+.banner {
+  height: 110px;
   background-color: coral;
-  margin:-0 16px 0 16px;
+  margin: -0 16px 0 16px;
 }
- .navBox li:last-child{
-  border-right:none;
-} 
-.navBox{
-  height:80px;
+.navBox li:last-child {
+  border-right: none;
+}
+.navBox {
+  height: 80px;
   display: flex;
   margin: 0 16px;
-  justify-content: center;
   align-items: center;
   text-align: center;
   /* background-color: crimson; */
 }
-.navBox li{
-  width:50%;
-   border-right:1px solid #ddd; 
+.navBox li {
+  width: 50%;
+  border-right: 1px solid #ddd;
 }
-.recommend{
+.examination {
   /* background-color: crimson; */
   margin: 0 16px;
   padding-bottom: 50px;
 }
-.recommend ul li{
-  padding-top:10px;
-  padding-bottom:10px;
-  min-height:90px;
-  border-bottom:1px solid #ddd;
-  display:flex;
+.examination ul li {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 90px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
   justify-content: space-between;
 }
-.recommendLeft{
-  min-height:90px;
+.examinationTest {
+  min-height: 90px;
   max-width: 249px;
-  display :flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.recommendLeft h3,h5,h6{
+.examinationTest h3,
+h5,
+h6 {
   margin-bottom: 4px;
   margin-top: 4px;
 }
-.recommendLeft h5{
+.examinationTest h5 {
   font-size: 11px;
-  width:52px;
+  width: 52px;
   background-color: wheat;
-  padding:3.5px 4px 3.5px 4px;
-  border:1px solid black;
+  padding: 3.5px 4px 3.5px 4px;
+  border: 1px solid black;
 }
-.recommendLeft h6{
+.examinationTest h6 {
   font-size: 12px;
-  color:darkgrey;
-  font-weight:inherit
+  color: darkgrey;
+  font-weight: inherit;
 }
-.recommendRight{
-  min-height:90px;
-  display:flex;
+.examinationContinue {
+  min-height: 90px;
+  display: flex;
   align-items: center;
 }
-.recommendRight a{
+.examinationContinue a {
   font-size: 13px;
   background-image: url("./img/rightarrow.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center right;
-  padding-right:22px;
+  padding-right: 22px;
 }
-.tabBar{
-  width:100%;
-  height:45px;
+.tabBar {
+  width: 100%;
+  height: 45px;
   background-color: white;
   position: fixed;
-  bottom:0;
-  box-shadow:0 -1px 10px 0 rgb(156, 223, 245);
+  bottom: 0;
+  box-shadow: 0 -1px 10px 0 rgb(156, 223, 245);
 }
 
-.tabBar ul{
- margin:0;
+.tabBar ul {
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
