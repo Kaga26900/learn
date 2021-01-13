@@ -45,19 +45,13 @@ a{
     height:20px;
     background-color: aqua;
 }
-.img1{
-  position:relative;
-}
-.subject{
-    display:flex;
-    align-items: center;
-    height:68px;
-}
 .subjectList {
    margin:8px auto; 
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  height:68px;
 }
 .subjectList li {
   width:68px;
@@ -67,7 +61,7 @@ a{
   text-align: center;
   margin:2px;
 }
-.img1{
+.subjectImg{
     height:160px;
     background-color: blue;
     position: relative;
@@ -127,12 +121,12 @@ a{
   width:50%;
    border-right:1px solid #ddd; 
 }
-.course{
+.recommend{
   /* background-color: crimson; */
   margin: 0 16px;
   padding-bottom: 50px;
 }
-.course ul li{
+.recommend ul li{
   padding-top:10px;
   padding-bottom:10px;
   min-height:90px;
@@ -140,35 +134,35 @@ a{
   display:flex;
   justify-content: space-between;
 }
-.courseLeft{
+.recommendLeft{
   min-height:90px;
   max-width: 249px;
   display :flex;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.courseLeft h3,h5,h6{
+.recommendLeft h3,h5,h6{
   margin-bottom: 4px;
   margin-top: 4px;
 }
-.courseLeft h5{
+.recommendLeft h5{
   font-size: 11px;
   width:52px;
   background-color: wheat;
   padding:3.5px 4px 3.5px 4px;
   border:1px solid black;
 }
-.courseLeft h6{
+.recommendLeft h6{
   font-size: 12px;
   color:darkgrey;
   font-weight:inherit
 }
-.courseRight{
+.recommendRight{
   min-height:90px;
   display:flex;
   align-items: center;
 }
-.courseRight a{
+.recommendRight a{
   font-size: 13px;
   background-image: url("./img/rightarrow.png");
   background-repeat: no-repeat;
