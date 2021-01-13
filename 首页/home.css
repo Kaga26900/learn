@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+button{
+  height:36px;
+  width: 120px;
+  border-radius: 36px ;
+  border: 2px solid white;
+  color:black;
+  background-color: gold;
+  position:absolute;
+  left:24px;
+  bottom: 24px;
+  outline: none;
+  font-weight:bold;
+}
+.rightArrow{
+  height:5px;
+  width:5px;
+  border-left: gold;
+  border-bottom: gold;
+}
+.active{
+
+}
+.clearfix::after{
+  content:'';
+  clear:both;
+  display:block;
+}
+body{
+  width:100%;
+}
+.page{
+  position:relative;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.time{
+  width:100%;
+    height:20px;
+    background-color: aqua;
+}
+.img1{
+  position:relative;
+}
+.subject{
+    display:flex;
+    align-items: center;
+    height:68px;
+}
+.subjectList {
+   margin:8px auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.subjectList li {
+  width:68px;
+  height: 44px;
+  float: left;
+  line-height: 44px;
+  text-align: center;
+  margin:2px;
+}
+.img1{
+    height:160px;
+    background-color: blue;
+    position: relative;
+}
+ .change{
+    border-radius: 6pt 0 0 6pt;
+    background-color:white;
+    height:32pt;
+    width:32pt;
+    position: absolute;
+    top:16pt;
+    right:0;
+    z-index:999;
+} 
+.function{
+  height:124px;
+  width:100%;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+ /* position:absolute;
+  top:252px;  */
+}
+.functionList{
+  margin:8px auto; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.functionList li {
+  width:76px;
+  height: 62px;
+  float: left;
+  margin:2px;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+.banner{
+  height:110px;
+  background-color: coral;
+  margin:-0 16px 0 16px;
+}
+ .navBox li:last-child{
+  border-right:none;
+} 
+.navBox{
+  height:80px;
+  display: flex;
+  margin: 0 16px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* background-color: crimson; */
+}
+.navBox li{
+  width:50%;
+   border-right:1px solid #ddd; 
+}
+.course{
+  /* background-color: crimson; */
+  margin: 0 16px;
+  padding-bottom: 50px;
+}
+.course ul li{
+  padding-top:10px;
+  padding-bottom:10px;
+  min-height:90px;
+  border-bottom:1px solid #ddd;
+  display:flex;
+  justify-content: space-between;
+}
+.courseLeft{
+  min-height:90px;
+  max-width: 249px;
+  display :flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.courseLeft h3,h5,h6{
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.courseLeft h5{
+  font-size: 11px;
+  width:52px;
+  background-color: wheat;
+  padding:3.5px 4px 3.5px 4px;
+  border:1px solid black;
+}
+.courseLeft h6{
+  font-size: 12px;
+  color:darkgrey;
+  font-weight:inherit
+}
+.courseRight{
+  min-height:90px;
+  display:flex;
+  align-items: center;
+}
+.courseRight a{
+  font-size: 13px;
+  background-image: url("./img/rightarrow.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center right;
+  padding-right:22px;
+}
+.tabBar{
+  width:100%;
+  height:45px;
+  background-color: white;
+  position: fixed;
+  bottom:0;
+  box-shadow:0 -1px 10px 0 rgb(156, 223, 245);
+}
+
+.tabBar ul{
+ margin:0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tabBar li {
+  padding: 2px 20px 0px 20px;
+  text-align: center;
+}
+.tabBar h6{
+font background position flex margin、padding width、height float;
+}
